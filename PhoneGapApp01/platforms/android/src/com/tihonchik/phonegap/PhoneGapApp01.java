@@ -1,7 +1,7 @@
 package com.tihonchik.phonegap;
 
-import android.os.Bundle;
 import org.apache.cordova.*;
+import android.os.Bundle;
 
 public class PhoneGapApp01 extends CordovaActivity {
     @Override
@@ -9,8 +9,7 @@ public class PhoneGapApp01 extends CordovaActivity {
         super.onCreate(savedInstanceState);
         super.init();
         // Set by <content src="index.html" /> in config.xml
-        super.loadUrl(Config.getStartUrl());
-        //super.loadUrl("file:///android_asset/www/index.html");
+        //super.loadUrl(Config.getStartUrl());
+        super.loadUrl("file:///android_asset/www/index.html");
     }
 }
-
